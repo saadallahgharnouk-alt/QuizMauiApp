@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizMauiApp.CategoriesPage"
+             Title="Catégories">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <Label Text="Choisissez une catégorie" FontSize="24" HorizontalTextAlignment="Center" />
+
+        <Button Text="Culture générale" Clicked="OnCategoryClicked" />
+        <Button Text="Informatique" Clicked="OnCategoryClicked" />
+        <Button Text="Mathématiques" Clicked="OnCategoryClicked" />
+    </VerticalStackLayout>
+</ContentPage>

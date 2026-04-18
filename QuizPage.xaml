@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizMauiApp.QuizPage"
+             Title="Quiz">
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label x:Name="QuestionLabel"
+               Text="Question ici"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+        <Button x:Name="AnswerButton1" Text="Paris" Clicked="OnAnswerClicked"/>
+        <Button x:Name="AnswerButton2" Text="Londres" Clicked="OnAnswerClicked"/>
+        <Button x:Name="AnswerButton3" Text="Madrid" Clicked="OnAnswerClicked"/>
+        <Button x:Name="AnswerButton4" Text="Rome" Clicked="OnAnswerClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
