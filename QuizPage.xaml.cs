@@ -3,9 +3,9 @@ namespace QuizMauiApp;
 [QueryProperty(nameof(SelectedCategory), "SelectedCategory")]
 public partial class QuizPage : ContentPage
 {
-    public string SelectedCategory { get; set; } // Propriété qui recevra le nom de la catégorie
+    public string? SelectedCategory { get; set; } // Propriété qui recevra le nom de la catégorie
 
-    private List<QuizQuestion> questions;
+    private List<QuizQuestion> questions = [];
     private int currentQuestionIndex = 0;
     private int score = 0;
 
@@ -84,7 +84,7 @@ public partial class QuizPage : ContentPage
         }
     }
 
-    private async void OnAnswerClicked(object sender, EventArgs e)
+    private async void OnAnswerClicked(object? sender, EventArgs e)
     {
         if (sender is not Button button)
             return;

@@ -10,9 +10,14 @@ A French-language quiz app built with .NET MAUI, C#, and XAML. Choose a category
 
 The app uses MAUI Shell to pass the selected category to the quiz page and the score to the results page. Questions are bundled in the app, so the quiz works offline.
 
+## My contributions
+
+- Built the quiz screens in XAML and connected them with [MAUI Shell navigation](AppShell.xaml.cs).
+- Wrote the [C# quiz logic](QuizPage.xaml.cs) for category-based questions, immediate answer feedback, and scoring.
+
 ## Run locally
 
-Install the .NET 10 SDK, the .NET MAUI workload, and the SDK for your target platform. For Android, have an emulator running or a configured device connected.
+Install the .NET 10 SDK and the .NET MAUI workload for your target platform. To run on Android, install the Android SDK and JDK 21, then start an emulator or connect an Android device with USB debugging enabled.
 
 ```bash
 git clone https://github.com/saadallahgharnouk-alt/QuizMauiApp.git

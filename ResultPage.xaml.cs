@@ -39,7 +39,7 @@ public partial class ResultPage : ContentPage
         }
     }
 
-    private async void OnHomeClicked(object sender, EventArgs e)
+    private async void OnHomeClicked(object? sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("//MainPage");
     }

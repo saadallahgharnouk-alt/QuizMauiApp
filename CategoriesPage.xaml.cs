@@ -7,7 +7,7 @@ public partial class CategoriesPage : ContentPage
         InitializeComponent();
     }
 
-    private async void OnCategoryClicked(object sender, EventArgs e)
+    private async void OnCategoryClicked(object? sender, EventArgs e)
     {
         if (sender is not Button button) return;
 
