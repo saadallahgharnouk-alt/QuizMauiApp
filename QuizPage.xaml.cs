@@ -1,5 +1,3 @@
-using System.Collections.ObjectModel;
-
 namespace QuizMauiApp;
 
 [QueryProperty(nameof(SelectedCategory), "SelectedCategory")]
@@ -104,7 +102,7 @@ public partial class QuizPage : ContentPage
         }
         else
         {
-            button.BackgroundColor = Colors.Red;Q
+            button.BackgroundColor = Colors.Red;
             if (AnswerButton1.Text == currentQuestion.CorrectAnswer) AnswerButton1.BackgroundColor = Colors.Green;
             if (AnswerButton2.Text == currentQuestion.CorrectAnswer) AnswerButton2.BackgroundColor = Colors.Green;
             if (AnswerButton3.Text == currentQuestion.CorrectAnswer) AnswerButton3.BackgroundColor = Colors.Green;
@@ -116,4 +114,4 @@ public partial class QuizPage : ContentPage
         currentQuestionIndex++;
         LoadQuestion();
     }
-}Q
+}

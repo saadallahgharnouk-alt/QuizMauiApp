@@ -1,23 +1,23 @@
-# 📱 Cross-Platform Interactive Assessment (.NET MAUI)
+# QuizMauiApp
 
-An interactive, cross-platform mobile application developed with **.NET MAUI** and **C#**. This project demonstrates the implementation of modern mobile development patterns, responsive UI design, and robust data binding across different device ecosystems.
+A French-language quiz app built with .NET MAUI, C#, and XAML. Choose a category, answer multiple-choice questions, and see your score at the end.
 
-## 🚀 Tech Stack
-* **Framework:** .NET MAUI
-* **Language:** C#, XAML
-* **Architecture:** MVVM (Model-View-ViewModel) approach
+## How it works
 
-## ⚙️ Technical Highlights
-* **Cross-Platform Compatibility:** Single codebase designed to run seamlessly on Android, iOS, and Windows.
-* **Responsive XAML Layouts:** Adaptive UI using advanced MAUI layouts (Grid, FlexLayout) to fit various screen dimensions perfectly.
-* **Data Binding & State Management:** Real-time UI updates managing the application lifecycle and user progression through the assessment flow.
+1. Pick general knowledge, computer science, or mathematics.
+2. Answer two questions per category. The app highlights the correct answer before advancing.
+3. View your final score and return to the home screen to try another category.
 
-## 📸 Screenshots
+The app uses MAUI Shell to pass the selected category to the quiz page and the score to the results page. Questions are bundled in the app, so the quiz works offline.
 
-*(Glisse et dépose tes captures d'écran ici)*
+## Run locally
 
-## 🛠️ How to run
-1. Clone the repository.
-2. Open the solution `.sln` in Visual Studio 2022.
-3. Ensure the `.NET Multi-platform App UI development` workload is installed.
-4. Select your target framework (e.g., Android Emulator) and run the application.
+Install the .NET 10 SDK, the .NET MAUI workload, and the SDK for your target platform. For Android, have an emulator running or a configured device connected.
+
+```bash
+git clone https://github.com/saadallahgharnouk-alt/QuizMauiApp.git
+cd QuizMauiApp
+dotnet build QuizMauiApp.csproj -f net10.0-android -t:Run
+```
+
+You can also open `QuizMauiApp.csproj` in an IDE with .NET MAUI support and select an emulator or device. The project declares Android, iOS, Mac Catalyst, and Windows targets, with platform availability determined by your development machine.
